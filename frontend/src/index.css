@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: white;
+  padding: 25px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+.header p {
+  margin-top: 5px;
+  color: #777;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  height: 650px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar {
+  width: 35%;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #555;
+}
+
+.contact-list h2 {
+  margin-bottom: 15px;
+}
+
+.contact-item {
+  padding: 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-item:hover {
+  background: #f0f0f0;
+}
+
+.contact-item.selected {
+  background: #e8e8e8;
+}
+
+.contact-item strong {
+  font-size: 16px;
+}
+
+.contact-item span {
+  font-size: 13px;
+  color: #777;
+}
+
+.details-panel {
+  width: 65%;
+  padding: 50px;
+}
+
+.contact-details h1 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.detail {
+  margin-bottom: 25px;
+}
+
+.detail strong {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.detail p {
+  font-size: 17px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.actions button {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.delete-btn {
+  background: #ddd;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 100px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+    margin: 15px;
+  }
+
+  .sidebar,
+  .details-panel {
+    width: 100%;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .details-panel {
+    padding: 30px;
+  }
+}
+.add-btn {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h2 {
+  margin-bottom: 25px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-container input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.save-btn {
+  background: #222;
+  color: white;
+}
+
+.cancel-btn {
+  background: #ddd;
+}
