@@ -3,8 +3,8 @@ import "./App.css";
 
 import Login from "./components/Login";
 import Register from "./components/Register";
-import ContactDetails from "./components/ContactDetails";
-import ContactForm from "./components/ContactForm";
+import ContactDetails from "./components/contactDetails";
+import ContactForm from "./components/contactForm";
 
 import {
   getContacts,

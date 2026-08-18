@@ -11,7 +11,7 @@ function Register({ onShowLogin }) {
 
     try {
       await axios.post(
-        "http://127.0.0.1:8000/api/register/",
+        "https://contact-book-2n11.onrender.com",
         {
           username: username,
           email: email,

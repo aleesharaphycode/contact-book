@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://contact-book-xxxx.onrender.com/api/",
+  baseURL: "https://contact-book-2n11.onrender.com/api/",
 });
 
 // Automatically attach JWT token to every request
