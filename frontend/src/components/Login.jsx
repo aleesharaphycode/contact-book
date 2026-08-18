@@ -10,7 +10,7 @@ function Login({ onLogin, onShowRegister }) {
 
     try {
       const response = await axios.post(
-        "https://contact-book-2n11.onrender.com",
+        "https://contact-book-2n11.onrender.com/api/token/",
         {
           username: username,
           password: password,
