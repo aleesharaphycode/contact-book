@@ -15,13 +15,13 @@ API.interceptors.request.use((config) => {
   return config;
 });
 
-export const getContacts = () => API.get("contacts/");
+export const getContacts = () => API.get("");
 
 export const createContact = (contact) =>
-  API.post("contacts/", contact);
+  API.post("", contact);
 
 export const updateContact = (id, contact) =>
-  API.put(`contacts/${id}/`, contact);
+  API.put(`${id}/`, contact);
 
 export const deleteContact = (id) =>
-  API.delete(`contacts/${id}/`);
+  API.delete(`${id}/`);
